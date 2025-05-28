@@ -1,0 +1,82 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --link-bg: #f1f1f1;
+  --link-color: #333333;
+}
+
+body.dark {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  --link-bg: #1e1e1e;
+  --link-color: #ffffff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: 0.3s;
+}
+
+.container {
+  max-width: 400px;
+  margin: auto;
+  text-align: center;
+  padding: 2rem;
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.bio {
+  margin-bottom: 2rem;
+}
+
+.links a {
+  position: relative;
+  display: block;
+  margin: 10px 0;
+  padding: 14px 18px;
+  padding-right: 60px; /* Tambahkan ruang untuk ikon di kanan */
+  background-color: var(--link-bg);
+  color: var(--link-color);
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-align: center; /* Pusatkan teks */
+  transition: 0.2s ease-in-out;
+}
+
+.links a:hover {
+  transform: scale(1.03);
+  background-color: #007bff;
+  color: white;
+}
+
+.links a .icon {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+}
+
+.theme-toggle {
+  text-align: right;
+  margin-bottom: 1rem;
+}
+
+.theme-toggle label {
+  cursor: pointer;
+  font-size: 0.9rem;
+}
